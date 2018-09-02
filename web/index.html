@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link href="mystyle.css" type="text/css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid" >
+        <div  id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-12" style="padding:10px; background: linear-gradient(to bottom, #33ccff 0%, #ffccff 100%);border-radius:10px; margin-top:5px;height:640px">
+                <center> <div class="box" >
+                    <div class="shape1"></div>
+                    <div class="shape2"></div>
+                    <div class="shape3"></div>
+                    <div class="shape4"></div>
+                    <div class="shape5"></div>
+                    <div class="shape6"></div>
+                    <div class="shape7"></div>
+                    <div class="float">
+                        <form class="form" type="GET">
+                            <div class="form-group">
+                                <label for="username" class="text-white">Username:</label><br>
+                                <input type="text" id="username" class="form-control" placeholder="User Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-white">Password:</label><br>
+                                <input type="password" id="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input id="btn" type="button" class="btn btn-info btn-md" value="SignIn">
+                            </div>
+                        </form>
+                    </div>
+                    </div></center>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            var user=$("#username").val();
+            var password=$("#password").val();
+            console.log(user);
+            console.log(password);
+            $.ajax({
+               type:"GET",
+               url:"Login",
+               data:{
+                   "username":user,
+                   "password":password
+               },
+               success:function(response){
+                   if(response=="Success"){
+                        alert("Logged in As: "+user);
+                    location.href = "home_page.html"
+                    }
+                    else
+                        alert("Something Wrong!!!  (Robin : 1234)");
+               },
+               error:function(response){
+                   alert("Something Went Wrong");
+               }
+            });
+        });
+    });
+</script>   
+</html>

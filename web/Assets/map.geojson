@@ -1,0 +1,81 @@
+﻿{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "school"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.28941917419434,
+          30.142455133017613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "school"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.29737997055052,
+          30.145034405062482
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "school",
+        "desc": "DAV SCHOOL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.28753089904785,
+          30.133789027413282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "school"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.28246688842773,
+          30.15080505010736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#f80548",
+        "marker-size": "medium",
+        "marker-symbol": "school"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.30250835418701,
+          30.17047095024881
+        ]
+      }
+    }
+  ]
+}
